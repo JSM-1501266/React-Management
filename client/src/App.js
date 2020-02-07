@@ -50,9 +50,10 @@ class App extends Component {
     const { completed } = this.state;
     this.setState({completed:completed >= 100 ? 0 : completed + 1});
   }
-
+  
   render() {
     const { classes } = this.props;
+    console.log(this.state.customers);
     return (
       <Paper className={classes.root}>
           <Table className={classes.table}>
@@ -73,7 +74,7 @@ class App extends Component {
                 key={C.id}
                 id={C.id}
                 image={C.image}
-                name={C.name}
+                name={C.NAME}
                 birthday={C.birthday}
                 gender={C.gender}
                 job={C.job}

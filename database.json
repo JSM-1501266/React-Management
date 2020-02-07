@@ -1,0 +1,7 @@
+{
+    "host": "management-project.cn20r0vkw4rx.us-east-2.rds.amazonaws.com",
+    "user": "user",
+    "password": "userproject",
+    "port": "3306",
+    "database": "management"
+}
