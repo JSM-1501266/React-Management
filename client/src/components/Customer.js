@@ -1,6 +1,7 @@
  import React from 'react';
  import TableRow from '@material-ui/core/TableRow';
  import TableCell from '@material-ui/core/TableCell';
+ import CustomerDelete from './CustomerDelete';
 
 class  Customer extends React.Component{ // React의 라이브러리, 클래스
     render() {
@@ -12,8 +13,8 @@ class  Customer extends React.Component{ // React의 라이브러리, 클래스
                 <TableCell>{this.props.birthday}</TableCell>
                 <TableCell>{this.props.gender}</TableCell>
                 <TableCell>{this.props.job}</TableCell>
+                <TableCell><CustomerDelete stateRefresh={this.props.stateRefresh} id={this.props.id}/></TableCell>
             </TableRow>
-            
         );
     }
 }
